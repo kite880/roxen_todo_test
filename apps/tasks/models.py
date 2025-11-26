@@ -160,7 +160,7 @@ class TaskAssignment(models.Model):
     notes = models.TextField(blank=True, null=True, verbose_name='Примечания')
 
     class Meta:
-        unique_together = ('task', 'user')
+        unique_together = ('task', 'user', 'role')
         indexes = [
             models.Index(fields=['task', 'status']),
             models.Index(fields=['user', 'status']),

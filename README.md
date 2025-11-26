@@ -86,7 +86,8 @@ venv\Scripts\activate  # Windows
 ```bash
 pip install -r requirements.txt
 ```
-
+### создать папку для логов если нет 
+ mkdir -p logs
 ### 3. Применение миграций
 ```bash
 python manage.py migrate
